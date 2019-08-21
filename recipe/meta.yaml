@@ -1,5 +1,5 @@
 {% set name = "marshmallow-enum" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/justanr/marshmallow_enum/archive/v{{ version }}.tar.gz
-  sha256: 7028c8106bd069c440ab58de807a6f6efadd1e108bdef329df2afb7217775276
+  sha256: d1f6a58bf201be8a615942d29c4ac2b4dc2ddd2e36de3cac9c87bee3002bcc6f
 
 build:
   number: 0
