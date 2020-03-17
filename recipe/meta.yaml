@@ -10,8 +10,8 @@ source:
   sha256: d1f6a58bf201be8a615942d29c4ac2b4dc2ddd2e36de3cac9c87bee3002bcc6f
 
 build:
-  number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Enum handling for Marshmallow'
+  summary: Enum handling for Marshmallow
   doc_url: https://github.com/justanr/marshmallow_enum
   dev_url: https://github.com/justanr/marshmallow_enum
 
