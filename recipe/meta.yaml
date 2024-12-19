@@ -10,21 +10,22 @@ source:
   sha256: d1f6a58bf201be8a615942d29c4ac2b4dc2ddd2e36de3cac9c87bee3002bcc6f
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - marshmallow >=2.0.0
 
 test:
   requires:
     - pytest
+    - python {{ python_min }}
   imports:
     - marshmallow_enum
   source_files:
